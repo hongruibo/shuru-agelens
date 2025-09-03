@@ -1,6 +1,5 @@
 # Shuru AgeLens — Audit + Agents (Clone & Batch) + Standards
 import streamlit as st
-page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 # Dependencies: streamlit, requests, beautifulsoup4
 import re, urllib.parse, collections, time
 from io import BytesIO
@@ -441,6 +440,7 @@ from **WCAG 2.2**, **WAI Older Users guidance**, and applied usability research 
 
 # =============== Streamlit UI ===============
 st.set_page_config(page_title="Shuru AgeLens", layout="wide")
+page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 st.title("Shuru AgeLens — Age-Inclusive Web Audit & Agents")
 
 
