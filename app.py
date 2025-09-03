@@ -441,7 +441,7 @@ from **WCAG 2.2**, **WAI Older Users guidance**, and applied usability research 
 st.set_page_config(page_title="Shuru AgeLens", layout="wide")
 st.title("Shuru AgeLens — Age-Inclusive Web Audit & Agents")
 
-page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About"], index=0)
+page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder’s Note"], index=0)", "Agents (Batch Clone)", "Standards / About"], index=0)
 
 # ---- Agents (Clone) ----
 if page == "Agents (Clone)":
@@ -657,3 +657,24 @@ She was the **youngest invited author** for the *Oxford Handbook* chapter on
 # Render the page if selected (safe even at the end of the file)
 if "page" in locals() and page == "Founder’s Note":
     show_founder()
+
+# Founder’s Note page handler
+if page == "Founder’s Note":
+    st.header("Founder’s Note")
+    st.markdown(
+        """
+**InfraJoy Labs** is founded by **Linda Hong Cheng**  
+([LinkedIn](https://www.linkedin.com/in/lindahongcheng)) — a **BBC-featured ethical AI founder**,  
+**Oxford Computational Sociology PhD** and **Clarendon Scholar** — whose work spans  
+**digital inclusion**, **age-friendly design**, and **algorithmic justice**.
+
+She was the **youngest invited author** for the *Oxford Handbook* chapter on  
+**decolonizing computational methods**  
+([read the chapter](https://academic.oup.com/edited-volume/55209/chapter/455226451)).
+
+**Shuru AgeLens** harnesses **agentic AI** to turn these principles into:
+- actionable **audits** with a transparent, weighted score,  
+- **live website cloning** that applies age-friendly fixes instantly, and  
+- **one-click remediations** teams can ship today.
+        """
+    )
