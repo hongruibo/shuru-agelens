@@ -632,3 +632,28 @@ She was the **youngest invited author** for the *Oxford Handbook* chapter on
 - **one-click remediations** teams can ship today.
         """
     )
+
+# ---- Founder’s Note tab content ----
+def show_founder():
+    st.header("Founder’s Note")
+    st.markdown(
+        """
+**InfraJoy Labs** is founded by **Linda Hong Cheng**  
+([LinkedIn](https://www.linkedin.com/in/lindahongcheng)) — a **BBC-featured ethical AI founder**,  
+**Oxford Computational Sociology PhD** and **Clarendon Scholar** — whose work spans  
+**digital inclusion**, **age-friendly design**, and **algorithmic justice**.
+
+She was the **youngest invited author** for the *Oxford Handbook* chapter on  
+**decolonizing computational methods**  
+([read the chapter](https://academic.oup.com/edited-volume/55209/chapter/455226451)).
+
+**Shuru AgeLens** harnesses **agentic AI** to turn these principles into:
+- actionable **audits** with a transparent, weighted score,  
+- **live website cloning** that applies age-friendly fixes instantly, and  
+- **one-click remediations** teams can ship today.
+        """
+    )
+
+# Render the page if selected (safe even at the end of the file)
+if "page" in locals() and page == "Founder’s Note":
+    show_founder()
