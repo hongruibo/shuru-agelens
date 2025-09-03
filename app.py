@@ -1,5 +1,6 @@
-page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 # Shuru AgeLens — Audit + Agents (Clone & Batch) + Standards
+import streamlit as st
+page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 # Dependencies: streamlit, requests, beautifulsoup4
 import re, urllib.parse, collections, time
 from io import BytesIO
