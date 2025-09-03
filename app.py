@@ -45,7 +45,7 @@ def flesch(text: str) -> float:
 # ---------- Audit a single page ----------
 def audit_page(url: str) -> dict:
     html = fetch_html(url)
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html, "html.parser")
 
     body_text = textify(soup.body or soup)
     word_count = len(body_text.split())
@@ -200,7 +200,7 @@ def crawl_start(url: str, limit: int = 1):
             res = audit_page(u)
             pages.append(res)
             html = fetch_html(u)
-            soup = BeautifulSoup(html, "lxml")
+            soup = BeautifulSoup(html, "html.parser")
             for a in soup.select("a[href]"):
                 href = a.get("href") or ""
                 if href.startswith("#"): continue
@@ -215,7 +215,7 @@ def crawl_start(url: str, limit: int = 1):
 VAGUE = {"click here","here","read more","learn more","more","this","link"}
 
 def transform_html(html: str, base_url: str):
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html, "html.parser")
     changes = []
     body = soup.body or soup
 
