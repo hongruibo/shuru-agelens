@@ -88,7 +88,7 @@ solely from this tool; use it as triage to drive remediation.
 # Even things like !important will be safe
 print("Hello, world!  font-size: 24px !important;")
 
-cat > app.py <<'PY'
+
 # Shuru AgeLens MVP with Audit, Agents (Clone), and Standards/About pages
 import re, urllib.parse, csv, io
 import requests
@@ -288,6 +288,5 @@ else:
             st.error(str(e))
 
 st.markdown("<hr/>", unsafe_allow_html=True)
-st.caption("© 2025 InfraJoy Labs — All rights reserved.")
-PY
+st.caption("© 2025 InfraJoy Labs — All rights reserved.")Y
 
