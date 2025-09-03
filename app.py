@@ -440,7 +440,7 @@ from **WCAG 2.2**, **WAI Older Users guidance**, and applied usability research 
 
 # =============== Streamlit UI ===============
 st.set_page_config(page_title="Shuru AgeLens", layout="wide")
-page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder'ss Note"], index=0)
+page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 st.title("Shuru AgeLens — Age-Inclusive Web Audit & Agents")
 
 
@@ -702,7 +702,7 @@ She was the **youngest invited author** for the *Oxford Handbook* chapter on
     )
 # ---- Founder's Note (clean override) ----
 def show_founder_note():
-    st.header("Founder’s Note")
+    st.header("Founder's Note")
     st.markdown(
         """
 **InfraJoy Labs** is founded by **Linda Hong Cheng**  
@@ -710,7 +710,7 @@ def show_founder_note():
 **Oxford Computational Sociology PhD** and **Clarendon Scholar** — whose work spans  
 **digital inclusion**, **age-friendly design**, and **algorithmic justice**.
 
-She was the **youngest invited author** for the *Oxford Handbook* chapter on  
+Linda was the **youngest invited author** for the *Oxford Handbook* chapter on  
 **decolonizing computational methods**  
 ([read the chapter](https://academic.oup.com/edited-volume/55209/chapter/455226451)).
 
@@ -722,6 +722,6 @@ She was the **youngest invited author** for the *Oxford Handbook* chapter on
     )
 
 # Show the page if selected
-if 'page' in locals() and page in ("Founder's Note", "Founder’s Note"):
+if 'page' in locals() and page in ("Founder's Note", "Founder's Note"):
     show_founder_note()
 
