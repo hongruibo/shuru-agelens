@@ -1,3 +1,4 @@
+page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder's Note"], index=0)
 # Shuru AgeLens — Audit + Agents (Clone & Batch) + Standards
 # Dependencies: streamlit, requests, beautifulsoup4
 import re, urllib.parse, collections, time
@@ -441,7 +442,6 @@ from **WCAG 2.2**, **WAI Older Users guidance**, and applied usability research 
 st.set_page_config(page_title="Shuru AgeLens", layout="wide")
 st.title("Shuru AgeLens — Age-Inclusive Web Audit & Agents")
 
-page = st.sidebar.radio("Navigate", ["Audit", "Agents (Clone)", "Agents (Batch Clone)", "Standards / About", "Founder’s Note"], index=0)", "Agents (Batch Clone)", "Standards / About", "Founder’s Note"], index=0)", "Agents (Batch Clone)", "Standards / About", "Founder’s Note"], index=0)", "Agents (Batch Clone)", "Standards / About"], index=0)
 
 # ---- Agents (Clone) ----
 if page == "Agents (Clone)":
